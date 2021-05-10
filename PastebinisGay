@@ -14,12 +14,16 @@ local Main = library:CreateMain({
 })
 
 -- A category is a tab
+local Category2 = Main:CreateCategory("Driving Empire")
 local Category1 = Main:CreateCategory("AutoFarm")
-local Category2 = Main:CreateCategory("Player")
+
 
 -- Self explanatory
-local Section1 = Category1:CreateSection("Auto Farm")
 local Section2 = Category2:CreateSection("Player Scripts")
+local Section1 = Category1:CreateSection("Auto Farm")
+
+local Text0 = Section2:Create("Textlabel", "Gui Made By LancereScripts on YouTube")
+
 
 Section2:Create("Slider", "Walk Speed", -- The name of the slider
     function(w)
