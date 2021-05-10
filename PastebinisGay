@@ -154,3 +154,18 @@ local af40 = Section1:Create("Button", "400 Mph", -- The name of the button
         animated = true -- Default: false
     }
 )
+
+local afkNo = Section1:Create("Button", "AntiAfk", -- The name of the button
+    function()
+        local vu = game:GetService("VirtualUser")
+		game:GetService("Players").LocalPlayer.Idled:connect(function()
+  		vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+ 		wait(1)
+		vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		end)
+    end,
+    {
+        -- Optional
+        animated = true -- Default: false
+    }
+)
