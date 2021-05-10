@@ -1,0 +1,156 @@
+if game.CoreGui:FindFirstChild("DeGui") then
+	game.CoreGui["DeGui"]:Destroy()
+end
+
+local library = loadstring(game:HttpGet("https://zypher.wtf/UI-Lib"))()
+
+local Main = library:CreateMain({
+    -- Required
+    projName = "DeGui", -- The name for the UI in game.CoreGui, not the GUI itself.
+    -- Optional
+    Resizable = true, -- Requires MinSize and MaxSize
+    MinSize = UDim2.new(0, 300, 0, 300),
+    MaxSize = UDim2.new(0, 650, 0, 600)
+})
+
+-- A category is a tab
+local Category1 = Main:CreateCategory("AutoFarm")
+local Category2 = Main:CreateCategory("Player")
+
+-- Self explanatory
+local Section1 = Category1:CreateSection("Auto Farm")
+local Section2 = Category2:CreateSection("Player Scripts")
+
+Section2:Create("Slider", "Walk Speed", -- The name of the slider
+    function(w)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = w
+    end,
+    {
+        -- Required
+        min = 16, -- Smallest value on the slider
+        max = 2000, -- Largest value on the slider
+
+        -- Optional
+        default = 16,
+        precise = false, -- Whether to do decimal values
+        changeablevalue = false -- Should the slider be changeable
+    }
+)
+
+Section2:Create("Slider", "Jump Height", -- The name of the slider
+    function(j)
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = j
+    end,
+    {
+        -- Required
+        min = 50, -- Smallest value on the slider
+        max = 2000, -- Largest value on the slider
+
+        -- Optional
+        default = 50,
+        precise = false, -- Whether to do decimal values
+        changeablevalue = false -- Should the slider be changeable
+    }
+)
+
+local bToolz = Section2:Create("Button", "BTools", -- The name of the button
+    function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/ybhDy38s", true))()
+    end,
+    {
+        -- Optional
+        animated = true -- Default: false
+    }
+)
+
+local clcTp = Section2:Create("Button", "Click Tp Tool", -- The name of the button
+    function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/ibWFWTXn", true))()
+    end,
+    {
+        -- Optional
+        animated = true -- Default: false
+    }
+)
+
+Section2:Create("Keybind", "Toggle Gui", -- The name of the keybind
+    function()
+        local DeGi = game.CoreGui.DeGui
+        if DeGi.Enabled == true then
+        	DeGi.Enabled = false
+        elseif DeGi.Enabled == false then
+        	DeGi.Enabled = true
+        end
+    end,
+    {
+        -- Optional
+        default = Enum.KeyCode.RightControl
+    }
+)
+
+local Text1 = Section1:Create("Textlabel", "Afk Farm V ")
+local Text2 = Section1:Create("Textlabel", "You might fall through the world, but it will work the")
+local Text3 = Section1:Create("Textlabel", "second time. That happens since the game added")
+local Text4 = Section1:Create("Textlabel", "optimization, so it doesn't load until you go near it.")
+local Text5 = Section1:Create("Textlabel", "To stop the autofarm, jump out of your car. (Yeah sorry)")
+
+
+local af18 = Section1:Create("Button", "180 Mph", -- The name of the button
+    function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/70dbYPP4", true))()
+    end,
+    {
+        -- Optional
+        animated = true -- Default: false
+    }
+)
+
+local af20 = Section1:Create("Button", "200 Mph", -- The name of the button
+    function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/QZ0JQqMS", true))()
+    end,
+    {
+        -- Optional
+        animated = true -- Default: false
+    }
+)
+
+local af25 = Section1:Create("Button", "250 Mph", -- The name of the button
+    function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/ADvvQTF5", true))()
+    end,
+    {
+        -- Optional
+        animated = true -- Default: false
+    }
+)
+
+local af30 = Section1:Create("Button", "300 Mph", -- The name of the button
+    function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/YwuKLBKU", true))()
+    end,
+    {
+        -- Optional
+        animated = true -- Default: false
+    }
+)
+
+local af35 = Section1:Create("Button", "350 Mph", -- The name of the button
+    function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/PaXKgbcL", true))()
+    end,
+    {
+        -- Optional
+        animated = true -- Default: false
+    }
+)
+
+local af40 = Section1:Create("Button", "400 Mph", -- The name of the button
+    function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/FUamF8b5", true))()
+    end,
+    {
+        -- Optional
+        animated = true -- Default: false
+    }
+)
