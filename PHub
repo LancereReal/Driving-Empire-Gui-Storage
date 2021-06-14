@@ -125,7 +125,7 @@ UIGradient_2.Parent = Status
 Game.Name = "Game"
 Game.Parent = sidemenu
 Game.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-Game.BorderSizePixel = 2
+Game.BorderSizePixel = 0
 Game.Position = UDim2.new(0, 0, 1.05158734, 0)
 Game.Size = UDim2.new(1, 0, 0.158730164, 0)
 
