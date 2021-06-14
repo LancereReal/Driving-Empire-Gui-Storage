@@ -29,8 +29,6 @@ local walkspeed = Instance.new("TextBox")
 local jumpheight = Instance.new("TextLabel")
 local jumpheight_2 = Instance.new("TextBox")
 local _350afbtn = Instance.new("TextButton")
-local changelog = Instance.new("TextLabel")
-local changelog_2 = Instance.new("TextLabel")
 local Misc = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
 local Discord_2 = Instance.new("Frame")
@@ -127,7 +125,7 @@ UIGradient_2.Parent = Status
 Game.Name = "Game"
 Game.Parent = sidemenu
 Game.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-Game.BorderSizePixel = 0
+Game.BorderSizePixel = 2
 Game.Position = UDim2.new(0, 0, 1.05158734, 0)
 Game.Size = UDim2.new(1, 0, 0.158730164, 0)
 
@@ -148,9 +146,9 @@ Main.Parent = Pure
 Main.Active = true
 Main.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
 Main.BorderSizePixel = 0
-Main.Position = UDim2.new(0.227870315, 0, 0.163175672, 0)
+Main.Position = UDim2.new(0.460999131, 0, 0.163175642, 0)
 Main.Selectable = true
-Main.Size = UDim2.new(0.543168485, 0, 0.450255096, 0)
+Main.Size = UDim2.new(0.216262326, 0, 0.450255126, 0)
 Main.Visible = false
 Main.Draggable = true
 
@@ -158,8 +156,8 @@ Pure_3.Name = "Pure"
 Pure_3.Parent = Main
 Pure_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Pure_3.BackgroundTransparency = 1.000
-Pure_3.Position = UDim2.new(0.387345672, 0, 0, 0)
-Pure_3.Size = UDim2.new(0.203703701, 0, 0.164305955, 0)
+Pure_3.Position = UDim2.new(0.387345612, 0, 0, 0)
+Pure_3.Size = UDim2.new(0.279321373, 0, 0.16430594, 0)
 Pure_3.Font = Enum.Font.ArialBold
 Pure_3.Text = "Pure"
 Pure_3.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -171,8 +169,8 @@ Local.Name = "Local"
 Local.Parent = Main
 Local.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Local.BackgroundTransparency = 1.000
-Local.Position = UDim2.new(0.395061731, 0, 0.215297446, 0)
-Local.Size = UDim2.new(0.209876537, 0, 0.11048159, 0)
+Local.Position = UDim2.new(0.309957176, 0, 0.186252236, 0)
+Local.Size = UDim2.new(0.428716868, 0, 0.161473066, 0)
 Local.Font = Enum.Font.ArialBold
 Local.Text = "Local Player (You)"
 Local.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -184,7 +182,7 @@ bar_2.Name = "bar"
 bar_2.Parent = Main
 bar_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 bar_2.BorderSizePixel = 0
-bar_2.Position = UDim2.new(0, 0, 0.181404307, 0)
+bar_2.Position = UDim2.new(0, 0, 0.163847283, 0)
 bar_2.Size = UDim2.new(1, 0, 0.00283286115, 0)
 
 UIGradient_3.Parent = bar_2
@@ -193,8 +191,8 @@ walkspeedname.Name = "walkspeedname"
 walkspeedname.Parent = Main
 walkspeedname.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 walkspeedname.BackgroundTransparency = 1.000
-walkspeedname.Position = UDim2.new(0.36728394, 0, 0.325779021, 0)
-walkspeedname.Size = UDim2.new(0.138888896, 0, 0.127478749, 0)
+walkspeedname.Position = UDim2.new(0.265969008, 0, 0.347725362, 0)
+walkspeedname.Size = UDim2.new(0.252361745, 0, 0.166982055, 0)
 walkspeedname.Font = Enum.Font.ArialBold
 walkspeedname.Text = "WalkSpeed:"
 walkspeedname.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -206,8 +204,8 @@ walkspeed.Name = "walkspeed"
 walkspeed.Parent = Main
 walkspeed.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
 walkspeed.BorderSizePixel = 0
-walkspeed.Position = UDim2.new(0.535493851, 0, 0.362606227, 0)
-walkspeed.Size = UDim2.new(0.131172836, 0, 0.0538243614, 0)
+walkspeed.Position = UDim2.new(0.586835623, 0, 0.378450125, 0)
+walkspeed.Size = UDim2.new(0.200469404, 0, 0.0906514823, 0)
 walkspeed.Font = Enum.Font.Highway
 walkspeed.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
 walkspeed.PlaceholderText = "Number"
@@ -221,8 +219,8 @@ jumpheight.Name = "jump height"
 jumpheight.Parent = Main
 jumpheight.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 jumpheight.BackgroundTransparency = 1.000
-jumpheight.Position = UDim2.new(0.365740746, 0, 0.433427751, 0)
-jumpheight.Size = UDim2.new(0.148148149, 0, 0.0906515568, 0)
+jumpheight.Position = UDim2.new(0.261916429, 0, 0.50365591, 0)
+jumpheight.Size = UDim2.new(0.256025106, 0, 0.0906515568, 0)
 jumpheight.Font = Enum.Font.ArialBold
 jumpheight.Text = "Jump Height"
 jumpheight.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -234,8 +232,8 @@ jumpheight_2.Name = "jump height"
 jumpheight_2.Parent = Main
 jumpheight_2.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
 jumpheight_2.BorderSizePixel = 0
-jumpheight_2.Position = UDim2.new(0.535493851, 0, 0.453257769, 0)
-jumpheight_2.Size = UDim2.new(0.131172836, 0, 0.0538243614, 0)
+jumpheight_2.Position = UDim2.new(0.588177741, 0, 0.521212935, 0)
+jumpheight_2.Size = UDim2.new(0.199127272, 0, 0.0736543685, 0)
 jumpheight_2.Font = Enum.Font.Highway
 jumpheight_2.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
 jumpheight_2.PlaceholderText = "Number"
@@ -249,39 +247,13 @@ _350afbtn.Name = "350afbtn"
 _350afbtn.Parent = Main
 _350afbtn.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
 _350afbtn.BorderSizePixel = 0
-_350afbtn.Position = UDim2.new(0.36728394, 0, 0.628895164, 0)
-_350afbtn.Size = UDim2.new(0.30864197, 0, 0.141643062, 0)
+_350afbtn.Position = UDim2.new(0.168706685, 0, 0.664009213, 0)
+_350afbtn.Size = UDim2.new(0.70579648, 0, 0.165791929, 0)
 _350afbtn.Font = Enum.Font.SciFi
 _350afbtn.Text = "Auto Farm"
 _350afbtn.TextColor3 = Color3.fromRGB(255, 255, 255)
 _350afbtn.TextSize = 40.000
 _350afbtn.TextWrapped = true
-
-changelog.Name = "changelog"
-changelog.Parent = Main
-changelog.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-changelog.BackgroundTransparency = 1.000
-changelog.Position = UDim2.new(0.0555555522, 0, 0.215297446, 0)
-changelog.Size = UDim2.new(0.209876537, 0, 0.11048159, 0)
-changelog.Font = Enum.Font.ArialBold
-changelog.Text = "Changelog:"
-changelog.TextColor3 = Color3.fromRGB(255, 255, 255)
-changelog.TextScaled = true
-changelog.TextSize = 14.000
-changelog.TextWrapped = true
-
-changelog_2.Name = "changelog"
-changelog_2.Parent = Main
-changelog_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-changelog_2.BackgroundTransparency = 1.000
-changelog_2.Position = UDim2.new(0.754629672, 0, 0.215297446, 0)
-changelog_2.Size = UDim2.new(0.209876537, 0, 0.11048159, 0)
-changelog_2.Font = Enum.Font.ArialBold
-changelog_2.Text = "Credits"
-changelog_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-changelog_2.TextScaled = true
-changelog_2.TextSize = 14.000
-changelog_2.TextWrapped = true
 
 Misc.Name = "Misc"
 Misc.Parent = Pure
@@ -325,7 +297,7 @@ TextLabel_2.TextWrapped = true
 
 -- Scripts:
 
-local function CRLGX_fake_script() -- Discord.LocalScript 
+local function NJFEGYQ_fake_script() -- Discord.LocalScript 
 	local script = Instance.new('LocalScript', Discord)
 
 	local gui = script.Parent.Parent.Parent.Discord
@@ -338,8 +310,8 @@ local function CRLGX_fake_script() -- Discord.LocalScript
 		end
 	end)
 end
-coroutine.wrap(CRLGX_fake_script)()
-local function MWDWP_fake_script() -- misc.LocalScript 
+coroutine.wrap(NJFEGYQ_fake_script)()
+local function AYOB_fake_script() -- misc.LocalScript 
 	local script = Instance.new('LocalScript', misc)
 
 	local gui = script.Parent.Parent.Parent.Misc
@@ -352,8 +324,8 @@ local function MWDWP_fake_script() -- misc.LocalScript
 		end
 	end)
 end
-coroutine.wrap(MWDWP_fake_script)()
-local function RGQUC_fake_script() -- autofarm.auto farm 
+coroutine.wrap(AYOB_fake_script)()
+local function AIGY_fake_script() -- autofarm.auto farm 
 	local script = Instance.new('LocalScript', autofarm)
 
 	local gui = script.Parent.Parent.Parent.Main
@@ -366,8 +338,8 @@ local function RGQUC_fake_script() -- autofarm.auto farm
 		end
 	end)
 end
-coroutine.wrap(RGQUC_fake_script)()
-local function OAGMGXV_fake_script() -- bar.LocalScript 
+coroutine.wrap(AIGY_fake_script)()
+local function ZUJD_fake_script() -- bar.LocalScript 
 	local script = Instance.new('LocalScript', bar)
 
 	local button = script.Parent
@@ -460,8 +432,8 @@ local function OAGMGXV_fake_script() -- bar.LocalScript
 	end
 	animate()
 end
-coroutine.wrap(OAGMGXV_fake_script)()
-local function NLBJM_fake_script() -- Status.LocalScript 
+coroutine.wrap(ZUJD_fake_script)()
+local function MBHPCT_fake_script() -- Status.LocalScript 
 	local script = Instance.new('LocalScript', Status)
 
 	local button = script.Parent
@@ -554,8 +526,8 @@ local function NLBJM_fake_script() -- Status.LocalScript
 	end
 	animate()
 end
-coroutine.wrap(NLBJM_fake_script)()
-local function XJBH_fake_script() -- GameDetected.LocalScript 
+coroutine.wrap(MBHPCT_fake_script)()
+local function ZMUL_fake_script() -- GameDetected.LocalScript 
 	local script = Instance.new('LocalScript', GameDetected)
 
 	if game.PlaceId == 3351674303 then
@@ -564,8 +536,8 @@ local function XJBH_fake_script() -- GameDetected.LocalScript
 		script.Parent.Text = "Unsupported Game"
 	end
 end
-coroutine.wrap(XJBH_fake_script)()
-local function OCMKJ_fake_script() -- bar_2.LocalScript 
+coroutine.wrap(ZMUL_fake_script)()
+local function KFFSDC_fake_script() -- bar_2.LocalScript 
 	local script = Instance.new('LocalScript', bar_2)
 
 	local button = script.Parent
@@ -658,8 +630,8 @@ local function OCMKJ_fake_script() -- bar_2.LocalScript
 	end
 	animate()
 end
-coroutine.wrap(OCMKJ_fake_script)()
-local function GDAAMSD_fake_script() -- walkspeed.LocalScript 
+coroutine.wrap(KFFSDC_fake_script)()
+local function UQMW_fake_script() -- walkspeed.LocalScript 
 	local script = Instance.new('LocalScript', walkspeed)
 
 	local Plr = game.Players.LocalPlayer
@@ -672,8 +644,8 @@ local function GDAAMSD_fake_script() -- walkspeed.LocalScript
 		end
 	end)
 end
-coroutine.wrap(GDAAMSD_fake_script)()
-local function YUYJKR_fake_script() -- jumpheight_2.LocalScript 
+coroutine.wrap(UQMW_fake_script)()
+local function LGMVD_fake_script() -- jumpheight_2.LocalScript 
 	local script = Instance.new('LocalScript', jumpheight_2)
 
 	local Plr = game.Players.LocalPlayer
@@ -687,12 +659,12 @@ local function YUYJKR_fake_script() -- jumpheight_2.LocalScript
 		end
 	end)
 end
-coroutine.wrap(YUYJKR_fake_script)()
-local function IXLKLU_fake_script() -- _350afbtn.LocalScript 
+coroutine.wrap(LGMVD_fake_script)()
+local function EPMTD_fake_script() -- _350afbtn.LocalScript 
 	local script = Instance.new('LocalScript', _350afbtn)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://pastebin.com/raw/PaXKgbcL", true))()
 	end)
 end
-coroutine.wrap(IXLKLU_fake_script)()
+coroutine.wrap(EPMTD_fake_script)()
