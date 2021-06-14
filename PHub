@@ -1,0 +1,698 @@
+if game.CoreGui:FindFirstChild("Pure") then
+	game.CoreGui["Pure"]:Destroy()
+end
+
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Pure = Instance.new("ScreenGui")
+local sidemenu = Instance.new("Frame")
+local Pure_2 = Instance.new("TextLabel")
+local Discord = Instance.new("TextButton")
+local misc = Instance.new("TextButton")
+local autofarm = Instance.new("TextButton")
+local bar = Instance.new("Frame")
+local UIGradient = Instance.new("UIGradient")
+local Status = Instance.new("TextLabel")
+local UIGradient_2 = Instance.new("UIGradient")
+local Game = Instance.new("Frame")
+local GameDetected = Instance.new("TextLabel")
+local Main = Instance.new("Frame")
+local Pure_3 = Instance.new("TextLabel")
+local Local = Instance.new("TextLabel")
+local bar_2 = Instance.new("Frame")
+local UIGradient_3 = Instance.new("UIGradient")
+local walkspeedname = Instance.new("TextLabel")
+local walkspeed = Instance.new("TextBox")
+local jumpheight = Instance.new("TextLabel")
+local jumpheight_2 = Instance.new("TextBox")
+local _350afbtn = Instance.new("TextButton")
+local changelog = Instance.new("TextLabel")
+local changelog_2 = Instance.new("TextLabel")
+local Misc = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local Discord_2 = Instance.new("Frame")
+local TextLabel_2 = Instance.new("TextLabel")
+
+--Properties:
+
+Pure.Name = "Pure"
+Pure.Parent = game:WaitForChild("CoreGui")
+
+sidemenu.Name = "sidemenu"
+sidemenu.Parent = Pure
+sidemenu.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+sidemenu.BorderSizePixel = 0
+sidemenu.Position = UDim2.new(-0.000876396894, 0, 0.206126183, 0)
+sidemenu.Size = UDim2.new(0.0787929595, 0, 0.321428567, 0)
+
+Pure_2.Name = "Pure"
+Pure_2.Parent = sidemenu
+Pure_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Pure_2.BackgroundTransparency = 1.000
+Pure_2.Position = UDim2.new(0.114086576, 0, -0.016635716, 0)
+Pure_2.Size = UDim2.new(0.776595771, 0, 0.206349209, 0)
+Pure_2.Font = Enum.Font.ArialBold
+Pure_2.Text = "Pure"
+Pure_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Pure_2.TextScaled = true
+Pure_2.TextSize = 14.000
+Pure_2.TextWrapped = true
+
+Discord.Name = "Discord"
+Discord.Parent = sidemenu
+Discord.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Discord.BorderSizePixel = 0
+Discord.Position = UDim2.new(0.0106382975, 0, 0.568831682, 0)
+Discord.Size = UDim2.new(0.989361703, 0, 0.107142858, 0)
+Discord.Font = Enum.Font.Gotham
+Discord.LineHeight = 1.010
+Discord.Text = "Discord"
+Discord.TextColor3 = Color3.fromRGB(255, 255, 255)
+Discord.TextSize = 16.000
+Discord.TextWrapped = true
+
+misc.Name = "misc"
+misc.Parent = sidemenu
+misc.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+misc.BorderSizePixel = 0
+misc.Position = UDim2.new(0.0106382975, 0, 0.40060243, 0)
+misc.Size = UDim2.new(0.989361703, 0, 0.103174604, 0)
+misc.Font = Enum.Font.Gotham
+misc.LineHeight = 1.010
+misc.Text = "Misc"
+misc.TextColor3 = Color3.fromRGB(255, 255, 255)
+misc.TextSize = 16.000
+misc.TextWrapped = true
+
+autofarm.Name = "autofarm"
+autofarm.Parent = sidemenu
+autofarm.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+autofarm.BorderSizePixel = 0
+autofarm.Position = UDim2.new(0.0106382975, 0, 0.21589309, 0)
+autofarm.Size = UDim2.new(0.989361703, 0, 0.123015873, 0)
+autofarm.Font = Enum.Font.Gotham
+autofarm.LineHeight = 1.010
+autofarm.Text = "Auto Farm"
+autofarm.TextColor3 = Color3.fromRGB(255, 255, 255)
+autofarm.TextSize = 16.000
+autofarm.TextWrapped = true
+
+bar.Name = "bar"
+bar.Parent = sidemenu
+bar.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+bar.BorderSizePixel = 0
+bar.Position = UDim2.new(0.0106382975, 0, 0.178571433, 0)
+bar.Size = UDim2.new(0.989361703, 0, 0.00793650839, 0)
+
+UIGradient.Parent = bar
+
+Status.Name = "Status"
+Status.Parent = sidemenu
+Status.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Status.BackgroundTransparency = 1.000
+Status.Position = UDim2.new(0.114086576, 0, 0.705586553, 0)
+Status.Size = UDim2.new(0.776595771, 0, 0.206349209, 0)
+Status.Font = Enum.Font.ArialBold
+Status.Text = "UNPATCHED"
+Status.TextColor3 = Color3.fromRGB(255, 255, 255)
+Status.TextScaled = true
+Status.TextSize = 14.000
+Status.TextWrapped = true
+
+UIGradient_2.Parent = Status
+
+Game.Name = "Game"
+Game.Parent = sidemenu
+Game.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Game.BorderSizePixel = 0
+Game.Position = UDim2.new(0, 0, 1.05158734, 0)
+Game.Size = UDim2.new(1, 0, 0.158730164, 0)
+
+GameDetected.Name = "GameDetected"
+GameDetected.Parent = Game
+GameDetected.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GameDetected.BackgroundTransparency = 1.000
+GameDetected.Position = UDim2.new(0.000450215448, 0, 0, 0)
+GameDetected.Size = UDim2.new(0.989361703, 0, 1, 0)
+GameDetected.Font = Enum.Font.ArialBold
+GameDetected.Text = "Driving Empire "
+GameDetected.TextColor3 = Color3.fromRGB(255, 255, 255)
+GameDetected.TextSize = 14.000
+GameDetected.TextWrapped = true
+
+Main.Name = "Main"
+Main.Parent = Pure
+Main.Active = true
+Main.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.227870315, 0, 0.163175672, 0)
+Main.Selectable = true
+Main.Size = UDim2.new(0.543168485, 0, 0.450255096, 0)
+Main.Visible = false
+Main.Draggable = true
+
+Pure_3.Name = "Pure"
+Pure_3.Parent = Main
+Pure_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Pure_3.BackgroundTransparency = 1.000
+Pure_3.Position = UDim2.new(0.387345672, 0, 0, 0)
+Pure_3.Size = UDim2.new(0.203703701, 0, 0.164305955, 0)
+Pure_3.Font = Enum.Font.ArialBold
+Pure_3.Text = "Pure"
+Pure_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Pure_3.TextScaled = true
+Pure_3.TextSize = 14.000
+Pure_3.TextWrapped = true
+
+Local.Name = "Local"
+Local.Parent = Main
+Local.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Local.BackgroundTransparency = 1.000
+Local.Position = UDim2.new(0.395061731, 0, 0.215297446, 0)
+Local.Size = UDim2.new(0.209876537, 0, 0.11048159, 0)
+Local.Font = Enum.Font.ArialBold
+Local.Text = "Local Player (You)"
+Local.TextColor3 = Color3.fromRGB(255, 255, 255)
+Local.TextScaled = true
+Local.TextSize = 14.000
+Local.TextWrapped = true
+
+bar_2.Name = "bar"
+bar_2.Parent = Main
+bar_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+bar_2.BorderSizePixel = 0
+bar_2.Position = UDim2.new(0, 0, 0.181404307, 0)
+bar_2.Size = UDim2.new(1, 0, 0.00283286115, 0)
+
+UIGradient_3.Parent = bar_2
+
+walkspeedname.Name = "walkspeedname"
+walkspeedname.Parent = Main
+walkspeedname.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+walkspeedname.BackgroundTransparency = 1.000
+walkspeedname.Position = UDim2.new(0.36728394, 0, 0.325779021, 0)
+walkspeedname.Size = UDim2.new(0.138888896, 0, 0.127478749, 0)
+walkspeedname.Font = Enum.Font.ArialBold
+walkspeedname.Text = "WalkSpeed:"
+walkspeedname.TextColor3 = Color3.fromRGB(255, 255, 255)
+walkspeedname.TextScaled = true
+walkspeedname.TextSize = 14.000
+walkspeedname.TextWrapped = true
+
+walkspeed.Name = "walkspeed"
+walkspeed.Parent = Main
+walkspeed.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+walkspeed.BorderSizePixel = 0
+walkspeed.Position = UDim2.new(0.535493851, 0, 0.362606227, 0)
+walkspeed.Size = UDim2.new(0.131172836, 0, 0.0538243614, 0)
+walkspeed.Font = Enum.Font.Highway
+walkspeed.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+walkspeed.PlaceholderText = "Number"
+walkspeed.Text = ""
+walkspeed.TextColor3 = Color3.fromRGB(255, 255, 255)
+walkspeed.TextScaled = true
+walkspeed.TextSize = 14.000
+walkspeed.TextWrapped = true
+
+jumpheight.Name = "jump height"
+jumpheight.Parent = Main
+jumpheight.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+jumpheight.BackgroundTransparency = 1.000
+jumpheight.Position = UDim2.new(0.365740746, 0, 0.433427751, 0)
+jumpheight.Size = UDim2.new(0.148148149, 0, 0.0906515568, 0)
+jumpheight.Font = Enum.Font.ArialBold
+jumpheight.Text = "Jump Height"
+jumpheight.TextColor3 = Color3.fromRGB(255, 255, 255)
+jumpheight.TextScaled = true
+jumpheight.TextSize = 14.000
+jumpheight.TextWrapped = true
+
+jumpheight_2.Name = "jump height"
+jumpheight_2.Parent = Main
+jumpheight_2.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+jumpheight_2.BorderSizePixel = 0
+jumpheight_2.Position = UDim2.new(0.535493851, 0, 0.453257769, 0)
+jumpheight_2.Size = UDim2.new(0.131172836, 0, 0.0538243614, 0)
+jumpheight_2.Font = Enum.Font.Highway
+jumpheight_2.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+jumpheight_2.PlaceholderText = "Number"
+jumpheight_2.Text = ""
+jumpheight_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+jumpheight_2.TextScaled = true
+jumpheight_2.TextSize = 14.000
+jumpheight_2.TextWrapped = true
+
+_350afbtn.Name = "350afbtn"
+_350afbtn.Parent = Main
+_350afbtn.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+_350afbtn.BorderSizePixel = 0
+_350afbtn.Position = UDim2.new(0.36728394, 0, 0.628895164, 0)
+_350afbtn.Size = UDim2.new(0.30864197, 0, 0.141643062, 0)
+_350afbtn.Font = Enum.Font.SciFi
+_350afbtn.Text = "Auto Farm"
+_350afbtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+_350afbtn.TextSize = 40.000
+_350afbtn.TextWrapped = true
+
+changelog.Name = "changelog"
+changelog.Parent = Main
+changelog.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+changelog.BackgroundTransparency = 1.000
+changelog.Position = UDim2.new(0.0555555522, 0, 0.215297446, 0)
+changelog.Size = UDim2.new(0.209876537, 0, 0.11048159, 0)
+changelog.Font = Enum.Font.ArialBold
+changelog.Text = "Changelog:"
+changelog.TextColor3 = Color3.fromRGB(255, 255, 255)
+changelog.TextScaled = true
+changelog.TextSize = 14.000
+changelog.TextWrapped = true
+
+changelog_2.Name = "changelog"
+changelog_2.Parent = Main
+changelog_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+changelog_2.BackgroundTransparency = 1.000
+changelog_2.Position = UDim2.new(0.754629672, 0, 0.215297446, 0)
+changelog_2.Size = UDim2.new(0.209876537, 0, 0.11048159, 0)
+changelog_2.Font = Enum.Font.ArialBold
+changelog_2.Text = "Credits"
+changelog_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+changelog_2.TextScaled = true
+changelog_2.TextSize = 14.000
+changelog_2.TextWrapped = true
+
+Misc.Name = "Misc"
+Misc.Parent = Pure
+Misc.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Misc.BorderSizePixel = 0
+Misc.Position = UDim2.new(0.279579312, 0, 0.239130437, 0)
+Misc.Size = UDim2.new(0.421626151, 0, 0.357142866, 0)
+Misc.Visible = false
+
+TextLabel.Parent = Misc
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.192842945, 0, 0.367857158, 0)
+TextLabel.Size = UDim2.new(0.612326026, 0, 0.20714286, 0)
+TextLabel.Font = Enum.Font.RobotoMono
+TextLabel.Text = "Driving Empire (Misc only allowed for paid version.)"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+Discord_2.Name = "Discord"
+Discord_2.Parent = Pure
+Discord_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Discord_2.BorderSizePixel = 0
+Discord_2.Position = UDim2.new(0.303242773, 0, 0.268774688, 0)
+Discord_2.Size = UDim2.new(0.33528918, 0, 0.28061223, 0)
+Discord_2.Visible = false
+
+TextLabel_2.Parent = Discord_2
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.112842947, 0, 0.295129895, 0)
+TextLabel_2.Size = UDim2.new(0.769999981, 0, 0.26363638, 0)
+TextLabel_2.Font = Enum.Font.RobotoMono
+TextLabel_2.Text = "https://discord.gg/yNNa7Subcm"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+-- Scripts:
+
+local function CRLGX_fake_script() -- Discord.LocalScript 
+	local script = Instance.new('LocalScript', Discord)
+
+	local gui = script.Parent.Parent.Parent.Discord
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if gui.Visible == true then
+			gui.Visible = false
+		elseif gui.Visible == false then
+			gui.Visible = true
+		end
+	end)
+end
+coroutine.wrap(CRLGX_fake_script)()
+local function MWDWP_fake_script() -- misc.LocalScript 
+	local script = Instance.new('LocalScript', misc)
+
+	local gui = script.Parent.Parent.Parent.Misc
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if gui.Visible == true then
+			gui.Visible = false
+		elseif gui.Visible == false then
+			gui.Visible = true
+		end
+	end)
+end
+coroutine.wrap(MWDWP_fake_script)()
+local function RGQUC_fake_script() -- autofarm.auto farm 
+	local script = Instance.new('LocalScript', autofarm)
+
+	local gui = script.Parent.Parent.Parent.Main
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if gui.Visible == true then
+			gui.Visible = false
+		elseif gui.Visible == false then
+			gui.Visible = true
+		end
+	end)
+end
+coroutine.wrap(RGQUC_fake_script)()
+local function OAGMGXV_fake_script() -- bar.LocalScript 
+	local script = Instance.new('LocalScript', bar)
+
+	local button = script.Parent
+	local gradient = button.UIGradient
+	local ts = game:GetService("TweenService")
+	local ti = TweenInfo.new(1, Enum.EasingStyle.Linear, Enum.EasingDirection.Out)
+	local offset = {Offset = Vector2.new(1, 0)}
+	local create = ts:Create(gradient, ti, offset)
+	local startingPos = Vector2.new(-1, 0)
+	local list = {} 
+	local s, kpt = ColorSequence.new, ColorSequenceKeypoint.new
+	local counter = 0
+	local status = "down" 
+	gradient.Offset = startingPos
+	local function rainbowColors()
+		local sat, val = 255, 255 
+		for i = 1, 15 do 
+			local hue = i * 17 
+			table.insert(list, Color3.fromHSV(hue / 255, sat / 255, val / 255))
+		end
+	end
+	rainbowColors()
+	gradient.Color = s({
+		kpt(0, list[#list]),
+		kpt(0.5, list[#list - 1]),
+		kpt(1, list[#list - 2])
+	})
+	counter = #list
+	local function animate()
+		create:Play()
+		create.Completed:Wait() 
+		gradient.Offset = startingPos 
+		gradient.Rotation = 180
+		if counter == #list - 1 and status == "down" then
+			gradient.Color = s({
+				kpt(0, gradient.Color.Keypoints[1].Value),
+				kpt(0.5, list[#list]), 
+				kpt(1, list[1]) 
+			})
+			counter = 1
+			status = "up" 
+		elseif counter == #list and status == "down" then 
+			gradient.Color = s({
+				kpt(0, gradient.Color.Keypoints[1].Value),
+				kpt(0.5, list[1]),
+				kpt(1, list[2])
+			})
+			counter = 2
+			status = "up"
+		elseif counter <= #list - 2 and status == "down" then 
+			gradient.Color = s({
+				kpt(0, gradient.Color.Keypoints[1].Value),
+				kpt(0.5, list[counter + 1]), 
+				kpt(1, list[counter + 2])
+			})
+			counter = counter + 2
+			status = "up"
+		end
+		create:Play()
+		create.Completed:Wait()
+		gradient.Offset = startingPos
+		gradient.Rotation = 0 
+		if counter == #list - 1 and status == "up" then
+			gradient.Color = s({ 
+	
+				kpt(0, list[1]), 
+				kpt(0.5, list[#list]), 
+				kpt(1, gradient.Color.Keypoints[3].Value)
+			})
+			counter = 1
+			status = "down"
+		elseif counter == #list and status == "up" then
+			gradient.Color = s({
+				kpt(0, list[2]),
+				kpt(0.5, list[1]), 
+				kpt(1, gradient.Color.Keypoints[3].Value)
+			})
+			counter = 2
+			status = "down"
+		elseif counter <= #list - 2 and status == "up" then
+			gradient.Color = s({
+				kpt(0, list[counter + 2]), 
+				kpt(0.5, list[counter + 1]), 
+				kpt(1, gradient.Color.Keypoints[3].Value) 	
+			})
+			counter = counter + 2
+			status = "down"
+		end
+		animate()
+	end
+	animate()
+end
+coroutine.wrap(OAGMGXV_fake_script)()
+local function NLBJM_fake_script() -- Status.LocalScript 
+	local script = Instance.new('LocalScript', Status)
+
+	local button = script.Parent
+	local gradient = button.UIGradient
+	local ts = game:GetService("TweenService")
+	local ti = TweenInfo.new(1, Enum.EasingStyle.Linear, Enum.EasingDirection.Out)
+	local offset = {Offset = Vector2.new(1, 0)}
+	local create = ts:Create(gradient, ti, offset)
+	local startingPos = Vector2.new(-1, 0)
+	local list = {} 
+	local s, kpt = ColorSequence.new, ColorSequenceKeypoint.new
+	local counter = 0
+	local status = "down" 
+	gradient.Offset = startingPos
+	local function rainbowColors()
+		local sat, val = 255, 255 
+		for i = 1, 15 do 
+			local hue = i * 17 
+			table.insert(list, Color3.fromHSV(hue / 255, sat / 255, val / 255))
+		end
+	end
+	rainbowColors()
+	gradient.Color = s({
+		kpt(0, list[#list]),
+		kpt(0.5, list[#list - 1]),
+		kpt(1, list[#list - 2])
+	})
+	counter = #list
+	local function animate()
+		create:Play()
+		create.Completed:Wait() 
+		gradient.Offset = startingPos 
+		gradient.Rotation = 180
+		if counter == #list - 1 and status == "down" then
+			gradient.Color = s({
+				kpt(0, gradient.Color.Keypoints[1].Value),
+				kpt(0.5, list[#list]), 
+				kpt(1, list[1]) 
+			})
+			counter = 1
+			status = "up" 
+		elseif counter == #list and status == "down" then 
+			gradient.Color = s({
+				kpt(0, gradient.Color.Keypoints[1].Value),
+				kpt(0.5, list[1]),
+				kpt(1, list[2])
+			})
+			counter = 2
+			status = "up"
+		elseif counter <= #list - 2 and status == "down" then 
+			gradient.Color = s({
+				kpt(0, gradient.Color.Keypoints[1].Value),
+				kpt(0.5, list[counter + 1]), 
+				kpt(1, list[counter + 2])
+			})
+			counter = counter + 2
+			status = "up"
+		end
+		create:Play()
+		create.Completed:Wait()
+		gradient.Offset = startingPos
+		gradient.Rotation = 0 
+		if counter == #list - 1 and status == "up" then
+			gradient.Color = s({ 
+	
+				kpt(0, list[1]), 
+				kpt(0.5, list[#list]), 
+				kpt(1, gradient.Color.Keypoints[3].Value)
+			})
+			counter = 1
+			status = "down"
+		elseif counter == #list and status == "up" then
+			gradient.Color = s({
+				kpt(0, list[2]),
+				kpt(0.5, list[1]), 
+				kpt(1, gradient.Color.Keypoints[3].Value)
+			})
+			counter = 2
+			status = "down"
+		elseif counter <= #list - 2 and status == "up" then
+			gradient.Color = s({
+				kpt(0, list[counter + 2]), 
+				kpt(0.5, list[counter + 1]), 
+				kpt(1, gradient.Color.Keypoints[3].Value) 	
+			})
+			counter = counter + 2
+			status = "down"
+		end
+		animate()
+	end
+	animate()
+end
+coroutine.wrap(NLBJM_fake_script)()
+local function XJBH_fake_script() -- GameDetected.LocalScript 
+	local script = Instance.new('LocalScript', GameDetected)
+
+	if game.PlaceId == 3351674303 then
+		script.Parent.Text = "Driving Empire"
+	else
+		script.Parent.Text = "Unsupported Game"
+	end
+end
+coroutine.wrap(XJBH_fake_script)()
+local function OCMKJ_fake_script() -- bar_2.LocalScript 
+	local script = Instance.new('LocalScript', bar_2)
+
+	local button = script.Parent
+	local gradient = button.UIGradient
+	local ts = game:GetService("TweenService")
+	local ti = TweenInfo.new(1, Enum.EasingStyle.Linear, Enum.EasingDirection.Out)
+	local offset = {Offset = Vector2.new(1, 0)}
+	local create = ts:Create(gradient, ti, offset)
+	local startingPos = Vector2.new(-1, 0)
+	local list = {} 
+	local s, kpt = ColorSequence.new, ColorSequenceKeypoint.new
+	local counter = 0
+	local status = "down" 
+	gradient.Offset = startingPos
+	local function rainbowColors()
+		local sat, val = 255, 255 
+		for i = 1, 15 do 
+			local hue = i * 17 
+			table.insert(list, Color3.fromHSV(hue / 255, sat / 255, val / 255))
+		end
+	end
+	rainbowColors()
+	gradient.Color = s({
+		kpt(0, list[#list]),
+		kpt(0.5, list[#list - 1]),
+		kpt(1, list[#list - 2])
+	})
+	counter = #list
+	local function animate()
+		create:Play()
+		create.Completed:Wait() 
+		gradient.Offset = startingPos 
+		gradient.Rotation = 180
+		if counter == #list - 1 and status == "down" then
+			gradient.Color = s({
+				kpt(0, gradient.Color.Keypoints[1].Value),
+				kpt(0.5, list[#list]), 
+				kpt(1, list[1]) 
+			})
+			counter = 1
+			status = "up" 
+		elseif counter == #list and status == "down" then 
+			gradient.Color = s({
+				kpt(0, gradient.Color.Keypoints[1].Value),
+				kpt(0.5, list[1]),
+				kpt(1, list[2])
+			})
+			counter = 2
+			status = "up"
+		elseif counter <= #list - 2 and status == "down" then 
+			gradient.Color = s({
+				kpt(0, gradient.Color.Keypoints[1].Value),
+				kpt(0.5, list[counter + 1]), 
+				kpt(1, list[counter + 2])
+			})
+			counter = counter + 2
+			status = "up"
+		end
+		create:Play()
+		create.Completed:Wait()
+		gradient.Offset = startingPos
+		gradient.Rotation = 0 
+		if counter == #list - 1 and status == "up" then
+			gradient.Color = s({ 
+	
+				kpt(0, list[1]), 
+				kpt(0.5, list[#list]), 
+				kpt(1, gradient.Color.Keypoints[3].Value)
+			})
+			counter = 1
+			status = "down"
+		elseif counter == #list and status == "up" then
+			gradient.Color = s({
+				kpt(0, list[2]),
+				kpt(0.5, list[1]), 
+				kpt(1, gradient.Color.Keypoints[3].Value)
+			})
+			counter = 2
+			status = "down"
+		elseif counter <= #list - 2 and status == "up" then
+			gradient.Color = s({
+				kpt(0, list[counter + 2]), 
+				kpt(0.5, list[counter + 1]), 
+				kpt(1, gradient.Color.Keypoints[3].Value) 	
+			})
+			counter = counter + 2
+			status = "down"
+		end
+		animate()
+	end
+	animate()
+end
+coroutine.wrap(OCMKJ_fake_script)()
+local function GDAAMSD_fake_script() -- walkspeed.LocalScript 
+	local script = Instance.new('LocalScript', walkspeed)
+
+	local Plr = game.Players.LocalPlayer
+	
+	script.Parent.FocusLost:Connect(function(enter)
+		print("Lost focus")
+		if enter then
+			print("Entered result")
+			Plr.Character.Humanoid.WalkSpeed = tonumber(script.Parent.Text)
+		end
+	end)
+end
+coroutine.wrap(GDAAMSD_fake_script)()
+local function YUYJKR_fake_script() -- jumpheight_2.LocalScript 
+	local script = Instance.new('LocalScript', jumpheight_2)
+
+	local Plr = game.Players.LocalPlayer
+	
+	script.Parent.FocusLost:Connect(function(enter)
+		print("Lost focus")
+		if enter then
+			print("Entered result")
+			Plr.Character.Humanoid.UseJumpPower = true
+			Plr.Character.Humanoid.JumpPower = tonumber(script.Parent.Text)
+		end
+	end)
+end
+coroutine.wrap(YUYJKR_fake_script)()
+local function IXLKLU_fake_script() -- _350afbtn.LocalScript 
+	local script = Instance.new('LocalScript', _350afbtn)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/PaXKgbcL", true))()
+	end)
+end
+coroutine.wrap(IXLKLU_fake_script)()
