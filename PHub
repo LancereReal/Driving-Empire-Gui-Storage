@@ -440,8 +440,6 @@ coroutine.wrap(HVHNO_fake_script)()
 local function ZRJKQ_fake_script() -- _350afbtn.LocalScript 
 	local script = Instance.new('LocalScript', _350afbtn)
 
-	speeed = script.Parent.Parent.Speed.Text * 2
-	
 	script.Parent.MouseButton1Click:Connect(function()
 		local Players = game:GetService("Players")
 		local RunService = game:GetService("RunService")
@@ -503,7 +501,7 @@ local function ZRJKQ_fake_script() -- _350afbtn.LocalScript
 			end
 			if Speed < 550 then 
 				local WV = GetWheelVelocity()
-				SetWheelVelocity(Vector3.new(speeed, WV["Y"], speeed / -50.1940043308)) 
+				SetWheelVelocity(Vector3.new(script.Parent.Parent.Speed.Text * 2, WV["Y"], script.Parent.Parent.Speed.Text * 2 / -50.1940043308)) 
 			end
 		end)
 	end)
